@@ -1,0 +1,47 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.titulo {
+    font-size: 3rem;
+}
+
+@media(max-width: 767px){
+    .titulo {
+        font-size: 2rem;
+    } 
+}
+
+.logo {
+    font-size: 1.125rem;
+}
+
+.radius-24 {
+    border-radius: 24px;
+    
+}
+
+.span {
+    position: absolute;
+    z-index: 2;
+    top: 8px;
+    left: 24px;
+    transition:
+    font-size .3s ease-in-out,
+    transform .3s ease-in-out,
+    background .2s ease-in-out;
+pointer-events: none;
+}
+
+.input {
+    outline: 0;
+}
+
+input:focus~span{
+    font-size: 12px;
+    transform: translateY(-18px) translateX(-10px);
+    
+}
+
