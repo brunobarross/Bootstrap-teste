@@ -42,6 +42,11 @@ pointer-events: none;
 input:focus~span{
     font-size: 12px;
     transform: translateY(-18px) translateX(-10px);
-    
 }
 
+
+input:valid~span{
+  font-size: 12px;
+    transform: translateY(-18px) translateX(-10px);
+    
+}
